@@ -9,7 +9,7 @@ if name.strip() == "":
 
 # number verification
 previous = float(input("Enter previous meter reading: "))
-if not previous.isdigit() or not (0 <= int(previous)):
+if previous < 0:
   print("Invalid number. Enter a number equal or greater than 0.")
   previous = float(input("Enter previous meter reading: "))
   
